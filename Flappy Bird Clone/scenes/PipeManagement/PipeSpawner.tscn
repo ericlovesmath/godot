@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/PipeManagement/PipeSpawner.gd" type="Script" id=1]
+[ext_resource path="res://scenes/PipeManagement/Pipe.tscn" type="PackedScene" id=2]
+
+[node name="PipeSpawner" type="Position2D"]
+position = Vector2( 688, 508 )
+scale = Vector2( 1.88816, 1.88371 )
+script = ExtResource( 1 )
+pipe_scene = ExtResource( 2 )
+
+[node name="PipeTimer" type="Timer" parent="."]
+wait_time = 1.5
