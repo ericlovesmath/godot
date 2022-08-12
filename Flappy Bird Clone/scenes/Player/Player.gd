@@ -19,4 +19,3 @@ func _physics_process(delta):
         velocity.y = MAX_FALL_SPEED
     
     move_and_slide(velocity)
-        
