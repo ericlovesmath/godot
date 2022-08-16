@@ -12,6 +12,7 @@ func _ready():
         "_on_VisibilityNotifier2D_screen_exited"
     )
     $ScoreArea.connect("body_entered", self, "_on_ScoreArea_body_entered")
+    self.add_to_group("obstacle")
 
 func _process(delta):
     position.x -= SPEED * delta
